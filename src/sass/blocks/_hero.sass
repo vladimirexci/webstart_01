@@ -6,16 +6,17 @@
 		flex-direction: row
 	&-text
 		flex-basis: 50%	
-		padding-right: 140px
+		padding-right: 120px
 		&__title
 			font-size: 41px
 			line-height: 55px
-			margin-bottom: 40px
+			margin-bottom: 38px
+			margin-left: -2px
 			+bold
 		&__subtitle
 			display: inline-block
 			font-size: 20px
-			font-weight: 400
+			+bold
 			margin-bottom: 70px
 	&-list
 		margin: 0
@@ -25,8 +26,8 @@
 			align-items: center
 			margin-bottom: 25px
 		&__image
-			width: 40px
-			height: 40px
+			width: 36px
+			height: 36px
 			border: 2px solid $main-color
 			display: flex
 			align-items: center
@@ -35,6 +36,13 @@
 			margin-right: 30px
 		&__text
 			max-width: 250px
+			font-size: 14px
+			line-height: 1.7
+			+Medium
+		&__text-1
+			max-width: 210px
+	&-image
+		box-shadow: 5px 3px 10px rgba(0,0,0,0.1)
 @media (max-width: 1200px)	
 	.hero
 		&-block
