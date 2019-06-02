@@ -62,7 +62,7 @@ body {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 900;
   font-family: 'Museo Sans black', sans-serif;
   font-weight: 900;
@@ -75,7 +75,7 @@ body {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 53px 0;
 }
 
 .section-title {
@@ -89,7 +89,7 @@ body {
 
 .input {
   border: 1px solid #dddddd;
-  padding: 26px;
+  padding: 22px;
   font-size: 15px;
   border-radius: 10px;
 }
@@ -213,7 +213,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .hero-list__item:last-child {
@@ -234,7 +234,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  margin-right: 30px;
+  margin-top: 2px;
+  margin-right: 32px;
 }
 
 .hero-list__text {
@@ -250,6 +251,7 @@ body {
 }
 
 .hero-image {
+  padding-left: 20px;
   -webkit-box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.1);
 }
@@ -317,12 +319,16 @@ body {
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
+  font-family: 'Museo Sans bold', sans-serif;
+  font-weight: 700;
 }
 
 .offer__subtitle {
   font-size: 16px;
   max-width: 250px;
   margin-bottom: 30px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
 }
 
 .offer__input {
@@ -337,6 +343,62 @@ body {
 .offer__button {
   width: 100%;
   min-height: 70px;
+  margin-bottom: 29px;
+}
+
+.offer-feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-beetwen;
+      -ms-flex-pack: space-beetwen;
+          justify-content: space-beetwen;
+}
+
+.offer-feedback .offer__recall {
+  width: 47%;
+  color: #333333;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
+.offer-feedback .offer__text {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  color: #333333;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.offer-feedback .offer__phone {
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'Museo Sans bold', sans-serif;
+  font-weight: 700;
+}
+
+.offer-feedback .text {
+  display: inline-block;
+}
+
+.offer-feedback .offer-call {
+  padding-left: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 1200px) {

@@ -19,10 +19,12 @@
 		max-width: 360px
 		line-height: 35px
 		margin-bottom: 24px
+		+bold
 	&__subtitle
 		font-size: 16px
 		max-width: 250px
 		margin-bottom: 30px	
+		+reg
 	&__input	
 		margin-bottom: 30px
 		width: 240px	
@@ -31,6 +33,36 @@
 	&__button
 		width: 100%	
 		min-height: 70px
+		margin-bottom: 29px
+.offer-feedback
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-beetwen
+	.offer__recall
+		width: 47%
+		color: $text-color
+		font-size: 15px
+		line-height: 24px
+		+reg
+	.offer__text
+		+reg
+		color: $text-color
+		font-size: 15px
+		line-height: 24px
+	.offer__phone
+		font-size: 15px
+		line-height: 24px
+		+bold
+	.text
+		display: inline-block
+	.offer-call
+		padding-left: 70px
+		display: flex
+		flex-direction: column
+	
+		
+
 @media (max-width: 1200px)	
 	.offer 
 		background-size: cover
@@ -44,4 +76,6 @@
 		background: #fff
 		&-block 
 			width: 100%
-			padding-right: 0					
+			padding-right: 0
+	
+
