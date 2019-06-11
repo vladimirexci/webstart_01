@@ -67,7 +67,7 @@
 						</ul>
 					</div>
 					<div class="hero-image">
-						<img class="hero__image" src="img/hero-image.png" alt="План квартиры">
+						<img class="hero__image" src="img/hero-image.png" width="100%" alt="План квартиры">
 					</div>
 				</div>
 			</div>
@@ -80,9 +80,9 @@
 					<!-- /.section-title -->
 					<span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
 					<!-- /.section-subtitle -->
-					<form action="" class="form offer__form" id="ofer-form">
-						<input type="text" name="username" class="input offer__input" required placeholder="Ваше имя">
-						<input type="tell" name="phone" class="input offer__input phone" required placeholder="Ваш телефон">
+					<form action="" class="form offer__form" id="offer-form">
+						<input type="text" name="offerUsername" tabindex="1" class="input offer__input" placeholder="Ваше имя">
+						<input type="tel" name="offerPhone" tabindex="1" class="input offer__input phone" placeholder="Ваш телефон">
 						<button class="button offer__button">Получить бесплатный дизайн-проект</button>
 						<div class="offer-feedback">
 							<span class="text offer__recall">Наш менеджер перезвонит Вам в течение 60 секунд</span>
@@ -237,8 +237,7 @@
 							<input type="text" name="email" required class="input brif__input" placeholder="Ваш email">
 							<input type="text" name="phone" required class="input brif__input phone" placeholder="Ваш телефон">
 							<button class="button brif__button">узнать стоимость</button>
-							<span class="form__description">Мы перезвоним Вам в течение 60 секунд
-</span>
+							<span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
 						</form>
 					</div>
 				</div>
@@ -246,6 +245,38 @@
 		</section>
 
 	</main>
+
+	<footer class="footer">
+		<div class="map" id="map">
+			<script type="text/javascript" charset="utf-8" async
+				src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A556e092945a3c4ffd6afc7e35eeb7d67f2ca74cac3014ff7be366f927d5dcb4a&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+		</div>
+		<div class="container">
+			<div class="contacts-block">
+				<div class="contacts">
+					<h3 class="contacts__title">Приезжайте к нам в гости!	Проконсультируем Вас по всем вопросам ремонта</h3>
+					<ul class="contacts-list">
+						<li class="contacts-list__item">
+							<span class="contacts-list__icon"><img src="img/map-placeholder.png" alt=""></span>
+							<span class="contacts-list__text">г. Москва <br>
+							<strong>ул. Ленинга, д. 10, корпус 2, оф. 308</strong></span>
+						</li>
+						<li class="contacts-list__item">
+							<span class="contacts-list__icon"><img src="img/clock-with-white-face (1).png" alt=""></span>
+							<span class="contacts-list__text">Режим работы: <br>
+							<strong>с 9:00 до 18:00</strong>
+</span>
+						</li>
+						<li class="contacts-list__item">
+							<span class="contacts-list__icon"><img src="img/phone-call-button (1).png" alt=""></span>
+							<span class="contacts-list__text">Телефон: <br> 
+							<b></b><a href="tel:+7(495)42-251-31">+ 7 (495) 42-251-31</a></b></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<div class="modal" id="modal">
 		<div class="modal-dialog">
@@ -282,7 +313,6 @@
 					},
 					phone: {
 						required: true,
-						email: true
 					}
 				},
 				messages: {
@@ -300,28 +330,27 @@
 					}
 				}	
 			});
-		$('#ofer-form').validate({
-				rules: {
-					username: {
-						required: true,
-						minlength: 2,
-						maxlength: 15
-					},
-					phone: {
-						required: true,
-						email: true
-					}
+		$('#offer-form').validate({
+			rules: {
+				offerUsername: {
+					required: true,
+					minlength: 2,
+					maxlength: 15
 				},
-				messages: {
-					username: {
-						required: "Напишите корректное имя",
-						minlength: jQuery.validator.format("Осталось {0} символа!"),
-						maxlength: jQuery.validator.format("Пожалуйста введите не более 15 символов")
-					},
-					phone: {
-						required: "Укажите ваш номер телефона",
-					}
+				offerPhone: {
+					required: true,
 				}
+			},
+			messages: {
+				offerUsername: {
+					required: "Напишите корректное имя",
+					minlength: jQuery.validator.format("Осталось {0} символа!"),
+					maxlength: jQuery.validator.format("Пожалуйста введите не более 15 символов")
+				},
+				offerPhone: {
+					required: "Укажите ваш номер телефона",
+				}
+			}
 			});	
 			// Маска телефона
 			$('.phone').mask('+7 (999) 999-99-99')

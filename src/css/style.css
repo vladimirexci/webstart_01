@@ -411,6 +411,20 @@ body {
           flex-direction: column;
 }
 
+#offerUsername-error {
+  position: absolute;
+  bottom: 148px;
+  left: 0;
+  font-size: 15px;
+}
+
+#offerPhone-error {
+  position: absolute;
+  bottom: 148px;
+  left: 254px;
+  font-size: 15px;
+}
+
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;
@@ -800,6 +814,104 @@ body {
   }
   .brif__form {
     margin-top: 80px;
+  }
+}
+
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 100px;
+  width: 300px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+.contacts-list__text {
+  color: #333333;
+  width: 150px;
+}
+
+.contacts-list__text a {
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Museo Sans bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts-list__text strong {
+  font-family: 'Museo Sans bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 39px;
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding-left: 50px;
+    padding-top: 70px;
+  }
+  .contacts-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts__title {
+    margin-bottom: 50px;
+  }
+  .map {
+    top: 540px;
+    width: 100%;
   }
 }
 
